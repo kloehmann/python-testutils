@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "de-python-testing-helpers"
+version = "0.1.0"
+description = "Some helpers to support writing unit tests in python"
+authors = ["Kevin Löhmann <{ID}+{username}@users.noreply.github.com>"]
+license = "FreeBSD License"
+readme = "README.md"
+packages = [{include = "**/*.py", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
