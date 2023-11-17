@@ -1,5 +1,5 @@
 import random, string
 
 
-def string(length):
+def random_string(length):
     return "".join(random.choice(string.ascii_letters) for i in range(length))
