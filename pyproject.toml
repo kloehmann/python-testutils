@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "de-python-testing-helpers"
+name = "testutils"
 version = "0.1.0"
 description = "Some helpers to support writing unit tests in python"
 authors = ["Kevin Löhmann <{ID}+{username}@users.noreply.github.com>"]
