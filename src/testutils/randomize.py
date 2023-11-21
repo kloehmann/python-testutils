@@ -1,6 +1,15 @@
 import random, string, sys
 
 
+def random_bytes(length: int = 0) -> bytes:
+    """random_bytes(length) returns a byte array of given length
+
+    if no length is specified, a random length will be used
+    """
+    length = length or random_int(1, 1024)
+    return bytearray(random.getrandbits(length))
+
+
 def random_int(min: int = 0, max: int = sys.maxsize):
     """random_int(min, max) - returns a random integer within the given boundaries
 
