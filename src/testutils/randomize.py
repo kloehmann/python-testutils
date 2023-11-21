@@ -7,7 +7,7 @@ def random_bytes(length: int = 0) -> bytes:
     if no length is specified, a random length will be used
     """
     length = length or random_int(1, 1024)
-    return bytearray(random.getrandbits(length))
+    return random.randbytes(length)
 
 
 def random_int(min: int = 0, max: int = sys.maxsize):
