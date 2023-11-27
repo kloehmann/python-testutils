@@ -1,4 +1,4 @@
-def property_wrapper(properties: dict) -> object:
+def wrap_properties(properties: dict) -> object:
     """property_wrapper(properties)
 
     This will wrap your dict into an object with the dict items as
