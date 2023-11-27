@@ -32,3 +32,15 @@ def contextmanagermock(cls):
     cls.__enter__ = __enter__
     cls.__exit__ = __exit__
     return cls
+
+
+def as_contextmanager(mock):
+    """as_contextmanager(mock)
+
+    This method adds the contextmanager interface to an existing mock.
+    This way a mock can also be used to test code that uses the mocked object
+    as contextmanager in a 'with' statement.
+    """
+    mock.__enter__.return_value = mock
+    mock.__exit__.return_value = mock
+    return mock
